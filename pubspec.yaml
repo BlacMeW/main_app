@@ -9,6 +9,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+    
+  mini_app:
+    git:
+      url: https://github.com/BlacMeW/mini_app.git
+      ref: main
 
 dev_dependencies:
   flutter_test:
