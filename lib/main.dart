@@ -26,6 +26,16 @@ class DemoApp extends StatelessWidget {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
+              const Align(
+                alignment: Alignment.centerLeft,
+                child: Padding(
+                  padding: EdgeInsets.only(bottom: 8.0),
+                  child: Text(
+                    'Mini App Function',
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.blue),
+                  ),
+                ),
+              ),
               // UI to call addUser
               Row(
                 children: [
@@ -106,6 +116,16 @@ class DemoApp extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 16),
+              const Align(
+                alignment: Alignment.centerLeft,
+                child: Padding(
+                  padding: EdgeInsets.only(bottom: 8.0),
+                  child: Text(
+                    'Mini App UI',
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.green),
+                  ),
+                ),
+              ),
               Expanded(child: RegisterUserWidget(key: userKey)),
             ],
           ),
